@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="auth-container">
+    <div class="auth-header">
+        <h1>🇮🇶 عراقي شات</h1>
+        <p>دردشة عراقية حقيقية بين العراقيين</p>
+    </div>
+    <div class="auth-form">
+        <div style="text-align: center; margin-bottom: 30px;">
+            <h2>مرحباً بك</h2>
+            <p>انضم إلى مجتمع الدردشة العراقي</p>
+        </div>
+        <div style="display: flex; gap: 15px;">
+            <a href="{{ url_for('login_page') }}" class="btn" style="background: var(--primary-color);">
+                <i class="fas fa-sign-in-alt"></i> تسجيل الدخول
+            </a>
+            <a href="{{ url_for('register_page') }}" class="btn" style="background: var(--secondary-color);">
+                <i class="fas fa-user-plus"></i> إنشاء حساب
+            </a>
+        </div>
+        <div style="margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 10px;">
+            <h3 style="color: var(--primary-color); margin-bottom: 15px;">
+                <i class="fas fa-star"></i> ميزات الموقع:
+            </h3>
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin-bottom: 10px; padding-right: 25px;">
+                    <i class="fas fa-check-circle" style="color: var(--success-color); margin-left: 10px;"></i>
+                    دردشة فورية حقيقية
+                </li>
+                <li style="margin-bottom: 10px; padding-right: 25px;">
+                    <i class="fas fa-check-circle" style="color: var(--success-color); margin-left: 10px;"></i>
+                    بحث عن مستخدمين عراقيين
+                </li>
+                <li style="margin-bottom: 10px; padding-right: 25px;">
+                    <i class="fas fa-check-circle" style="color: var(--success-color); margin-left: 10px;"></i>
+                    ملف شخصي متكامل
+                </li>
+                <li style="padding-right: 25px;">
+                    <i class="fas fa-check-circle" style="color: var(--success-color); margin-left: 10px;"></i>
+                    آمن وسريع
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
